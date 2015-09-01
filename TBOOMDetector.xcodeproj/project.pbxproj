@@ -7,61 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88CC4C751B964A6D00910C78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4C741B964A6D00910C78 /* main.m */; };
-		88CC4C781B964A6D00910C78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4C771B964A6D00910C78 /* AppDelegate.m */; };
-		88CC4C7B1B964A6D00910C78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4C7A1B964A6D00910C78 /* ViewController.m */; };
-		88CC4C7E1B964A6D00910C78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CC4C7C1B964A6D00910C78 /* Main.storyboard */; };
-		88CC4C801B964A6D00910C78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CC4C7F1B964A6D00910C78 /* Images.xcassets */; };
-		88CC4C831B964A6D00910C78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88CC4C811B964A6D00910C78 /* LaunchScreen.xib */; };
-		88CC4C8F1B964A6D00910C78 /* TBOOMDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4C8E1B964A6D00910C78 /* TBOOMDetectorTests.m */; };
-		88CC4C9A1B964AB500910C78 /* TBOOMDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4C991B964AB500910C78 /* TBOOMDetector.m */; };
-		88CC4C9D1B964D0D00910C78 /* TBDebuggerUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4C9B1B964D0D00910C78 /* TBDebuggerUtils.c */; };
-		E6AF82B9D463B262BC6DA2AE /* libPods-TBOOMDetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AE965B7FF2594386B8A3CE /* libPods-TBOOMDetector.a */; };
+		88CC4CAB1B9669A200910C78 /* TBOOMDetector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88CC4CAA1B9669A200910C78 /* TBOOMDetector.h */; };
+		88CC4CAD1B9669A200910C78 /* TBOOMDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4CAC1B9669A200910C78 /* TBOOMDetector.m */; };
+		88CC4CC31B966A4300910C78 /* TBDebuggerUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 88CC4CC11B966A4300910C78 /* TBDebuggerUtils.c */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		88CC4C891B964A6D00910C78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 88CC4C671B964A6D00910C78 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88CC4C6E1B964A6D00910C78;
-			remoteInfo = TBOOMDetector;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		17AE965B7FF2594386B8A3CE /* libPods-TBOOMDetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TBOOMDetector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		40048B32DB8A3BA71EFA1B62 /* Pods-TBOOMDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBOOMDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBOOMDetector/Pods-TBOOMDetector.debug.xcconfig"; sourceTree = "<group>"; };
-		88CC4C6F1B964A6D00910C78 /* TBOOMDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBOOMDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		88CC4C731B964A6D00910C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88CC4C741B964A6D00910C78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88CC4C761B964A6D00910C78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		88CC4C771B964A6D00910C78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88CC4C791B964A6D00910C78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88CC4C7A1B964A6D00910C78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		88CC4C7D1B964A6D00910C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88CC4C7F1B964A6D00910C78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		88CC4C821B964A6D00910C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		88CC4C881B964A6D00910C78 /* TBOOMDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBOOMDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88CC4C8D1B964A6D00910C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88CC4C8E1B964A6D00910C78 /* TBOOMDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBOOMDetectorTests.m; sourceTree = "<group>"; };
-		88CC4C981B964AB500910C78 /* TBOOMDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBOOMDetector.h; sourceTree = "<group>"; };
-		88CC4C991B964AB500910C78 /* TBOOMDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBOOMDetector.m; sourceTree = "<group>"; };
-		88CC4C9B1B964D0D00910C78 /* TBDebuggerUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TBDebuggerUtils.c; sourceTree = "<group>"; };
-		88CC4C9C1B964D0D00910C78 /* TBDebuggerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBDebuggerUtils.h; sourceTree = "<group>"; };
-		8EDC737FF5B6C3CD0C53E596 /* Pods-TBOOMDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBOOMDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBOOMDetector/Pods-TBOOMDetector.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		88CC4C6C1B964A6D00910C78 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
+/* Begin PBXCopyFilesBuildPhase section */
+		88CC4CA51B9669A200910C78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
 			files = (
-				E6AF82B9D463B262BC6DA2AE /* libPods-TBOOMDetector.a in Frameworks */,
+				88CC4CAB1B9669A200910C78 /* TBOOMDetector.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88CC4C851B964A6D00910C78 /* Frameworks */ = {
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88CC4CA71B9669A200910C78 /* libTBOOMDetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTBOOMDetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		88CC4CAA1B9669A200910C78 /* TBOOMDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBOOMDetector.h; sourceTree = "<group>"; };
+		88CC4CAC1B9669A200910C78 /* TBOOMDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBOOMDetector.m; sourceTree = "<group>"; };
+		88CC4CC11B966A4300910C78 /* TBDebuggerUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TBDebuggerUtils.c; sourceTree = "<group>"; };
+		88CC4CC21B966A4300910C78 /* TBDebuggerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBDebuggerUtils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88CC4CA41B9669A200910C78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,100 +44,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		532BDC2A53BAF5016BC33E29 /* Frameworks */ = {
+		88CC4C9E1B9669A200910C78 = {
 			isa = PBXGroup;
 			children = (
-				17AE965B7FF2594386B8A3CE /* libPods-TBOOMDetector.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		573CBBEA2F4AE76A21DB4182 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				40048B32DB8A3BA71EFA1B62 /* Pods-TBOOMDetector.debug.xcconfig */,
-				8EDC737FF5B6C3CD0C53E596 /* Pods-TBOOMDetector.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		88CC4C661B964A6D00910C78 = {
-			isa = PBXGroup;
-			children = (
-				88CC4C711B964A6D00910C78 /* TBOOMDetector */,
-				88CC4C8B1B964A6D00910C78 /* TBOOMDetectorTests */,
-				88CC4C701B964A6D00910C78 /* Products */,
-				573CBBEA2F4AE76A21DB4182 /* Pods */,
-				532BDC2A53BAF5016BC33E29 /* Frameworks */,
+				88CC4CA91B9669A200910C78 /* TBOOMDetector */,
+				88CC4CA81B9669A200910C78 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88CC4C701B964A6D00910C78 /* Products */ = {
+		88CC4CA81B9669A200910C78 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88CC4C6F1B964A6D00910C78 /* TBOOMDetector.app */,
-				88CC4C881B964A6D00910C78 /* TBOOMDetectorTests.xctest */,
+				88CC4CA71B9669A200910C78 /* libTBOOMDetector.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88CC4C711B964A6D00910C78 /* TBOOMDetector */ = {
+		88CC4CA91B9669A200910C78 /* TBOOMDetector */ = {
 			isa = PBXGroup;
 			children = (
-				88CC4C761B964A6D00910C78 /* AppDelegate.h */,
-				88CC4C771B964A6D00910C78 /* AppDelegate.m */,
-				88CC4C791B964A6D00910C78 /* ViewController.h */,
-				88CC4C7A1B964A6D00910C78 /* ViewController.m */,
-				88CC4C7C1B964A6D00910C78 /* Main.storyboard */,
-				88CC4C981B964AB500910C78 /* TBOOMDetector.h */,
-				88CC4C991B964AB500910C78 /* TBOOMDetector.m */,
-				88CC4C9B1B964D0D00910C78 /* TBDebuggerUtils.c */,
-				88CC4C9C1B964D0D00910C78 /* TBDebuggerUtils.h */,
-				88CC4C7F1B964A6D00910C78 /* Images.xcassets */,
-				88CC4C811B964A6D00910C78 /* LaunchScreen.xib */,
-				88CC4C721B964A6D00910C78 /* Supporting Files */,
+				88CC4CAA1B9669A200910C78 /* TBOOMDetector.h */,
+				88CC4CAC1B9669A200910C78 /* TBOOMDetector.m */,
+				88CC4CC11B966A4300910C78 /* TBDebuggerUtils.c */,
+				88CC4CC21B966A4300910C78 /* TBDebuggerUtils.h */,
 			);
 			path = TBOOMDetector;
-			sourceTree = "<group>";
-		};
-		88CC4C721B964A6D00910C78 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88CC4C731B964A6D00910C78 /* Info.plist */,
-				88CC4C741B964A6D00910C78 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88CC4C8B1B964A6D00910C78 /* TBOOMDetectorTests */ = {
-			isa = PBXGroup;
-			children = (
-				88CC4C8E1B964A6D00910C78 /* TBOOMDetectorTests.m */,
-				88CC4C8C1B964A6D00910C78 /* Supporting Files */,
-			);
-			path = TBOOMDetectorTests;
-			sourceTree = "<group>";
-		};
-		88CC4C8C1B964A6D00910C78 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88CC4C8D1B964A6D00910C78 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88CC4C6E1B964A6D00910C78 /* TBOOMDetector */ = {
+		88CC4CA61B9669A200910C78 /* TBOOMDetector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88CC4C921B964A6D00910C78 /* Build configuration list for PBXNativeTarget "TBOOMDetector" */;
+			buildConfigurationList = 88CC4CBB1B9669A200910C78 /* Build configuration list for PBXNativeTarget "TBOOMDetector" */;
 			buildPhases = (
-				1FBA7CF7CAAD1E3EBC095474 /* Check Pods Manifest.lock */,
-				88CC4C6B1B964A6D00910C78 /* Sources */,
-				88CC4C6C1B964A6D00910C78 /* Frameworks */,
-				88CC4C6D1B964A6D00910C78 /* Resources */,
-				9368A0D7D544F50E623E030E /* Copy Pods Resources */,
+				B9FFBD2A15B495A1E564F9FE /* Check Pods Manifest.lock */,
+				88CC4CA31B9669A200910C78 /* Sources */,
+				88CC4CA41B9669A200910C78 /* Frameworks */,
+				88CC4CA51B9669A200910C78 /* CopyFiles */,
+				84C384C5B7D4DFB16CCD0664 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,101 +90,42 @@
 			);
 			name = TBOOMDetector;
 			productName = TBOOMDetector;
-			productReference = 88CC4C6F1B964A6D00910C78 /* TBOOMDetector.app */;
-			productType = "com.apple.product-type.application";
-		};
-		88CC4C871B964A6D00910C78 /* TBOOMDetectorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88CC4C951B964A6D00910C78 /* Build configuration list for PBXNativeTarget "TBOOMDetectorTests" */;
-			buildPhases = (
-				88CC4C841B964A6D00910C78 /* Sources */,
-				88CC4C851B964A6D00910C78 /* Frameworks */,
-				88CC4C861B964A6D00910C78 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				88CC4C8A1B964A6D00910C78 /* PBXTargetDependency */,
-			);
-			name = TBOOMDetectorTests;
-			productName = TBOOMDetectorTests;
-			productReference = 88CC4C881B964A6D00910C78 /* TBOOMDetectorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 88CC4CA71B9669A200910C78 /* libTBOOMDetector.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88CC4C671B964A6D00910C78 /* Project object */ = {
+		88CC4C9F1B9669A200910C78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Trailbehind inc.";
 				TargetAttributes = {
-					88CC4C6E1B964A6D00910C78 = {
+					88CC4CA61B9669A200910C78 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					88CC4C871B964A6D00910C78 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 88CC4C6E1B964A6D00910C78;
 					};
 				};
 			};
-			buildConfigurationList = 88CC4C6A1B964A6D00910C78 /* Build configuration list for PBXProject "TBOOMDetector" */;
+			buildConfigurationList = 88CC4CA21B9669A200910C78 /* Build configuration list for PBXProject "TBOOMDetector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 88CC4C661B964A6D00910C78;
-			productRefGroup = 88CC4C701B964A6D00910C78 /* Products */;
+			mainGroup = 88CC4C9E1B9669A200910C78;
+			productRefGroup = 88CC4CA81B9669A200910C78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88CC4C6E1B964A6D00910C78 /* TBOOMDetector */,
-				88CC4C871B964A6D00910C78 /* TBOOMDetectorTests */,
+				88CC4CA61B9669A200910C78 /* TBOOMDetector */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		88CC4C6D1B964A6D00910C78 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88CC4C7E1B964A6D00910C78 /* Main.storyboard in Resources */,
-				88CC4C831B964A6D00910C78 /* LaunchScreen.xib in Resources */,
-				88CC4C801B964A6D00910C78 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88CC4C861B964A6D00910C78 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXShellScriptBuildPhase section */
-		1FBA7CF7CAAD1E3EBC095474 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9368A0D7D544F50E623E030E /* Copy Pods Resources */ = {
+		84C384C5B7D4DFB16CCD0664 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,60 +140,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBOOMDetector/Pods-TBOOMDetector-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B9FFBD2A15B495A1E564F9FE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88CC4C6B1B964A6D00910C78 /* Sources */ = {
+		88CC4CA31B9669A200910C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CC4C7B1B964A6D00910C78 /* ViewController.m in Sources */,
-				88CC4C9D1B964D0D00910C78 /* TBDebuggerUtils.c in Sources */,
-				88CC4C9A1B964AB500910C78 /* TBOOMDetector.m in Sources */,
-				88CC4C781B964A6D00910C78 /* AppDelegate.m in Sources */,
-				88CC4C751B964A6D00910C78 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88CC4C841B964A6D00910C78 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88CC4C8F1B964A6D00910C78 /* TBOOMDetectorTests.m in Sources */,
+				88CC4CC31B966A4300910C78 /* TBDebuggerUtils.c in Sources */,
+				88CC4CAD1B9669A200910C78 /* TBOOMDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		88CC4C8A1B964A6D00910C78 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 88CC4C6E1B964A6D00910C78 /* TBOOMDetector */;
-			targetProxy = 88CC4C891B964A6D00910C78 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		88CC4C7C1B964A6D00910C78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88CC4C7D1B964A6D00910C78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		88CC4C811B964A6D00910C78 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88CC4C821B964A6D00910C78 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		88CC4C901B964A6D00910C78 /* Debug */ = {
+		88CC4CB91B9669A200910C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -351,7 +187,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -374,11 +209,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		88CC4C911B964A6D00910C78 /* Release */ = {
+		88CC4CBA1B9669A200910C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +229,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -411,100 +244,50 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		88CC4C931B964A6D00910C78 /* Debug */ = {
+		88CC4CBC1B9669A200910C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40048B32DB8A3BA71EFA1B62 /* Pods-TBOOMDetector.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TBOOMDetector/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		88CC4C941B964A6D00910C78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EDC737FF5B6C3CD0C53E596 /* Pods-TBOOMDetector.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TBOOMDetector/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		88CC4C961B964A6D00910C78 /* Debug */ = {
+		88CC4CBD1B9669A200910C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TBOOMDetectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBOOMDetector.app/TBOOMDetector";
-			};
-			name = Debug;
-		};
-		88CC4C971B964A6D00910C78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TBOOMDetectorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBOOMDetector.app/TBOOMDetector";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88CC4C6A1B964A6D00910C78 /* Build configuration list for PBXProject "TBOOMDetector" */ = {
+		88CC4CA21B9669A200910C78 /* Build configuration list for PBXProject "TBOOMDetector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88CC4C901B964A6D00910C78 /* Debug */,
-				88CC4C911B964A6D00910C78 /* Release */,
+				88CC4CB91B9669A200910C78 /* Debug */,
+				88CC4CBA1B9669A200910C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88CC4C921B964A6D00910C78 /* Build configuration list for PBXNativeTarget "TBOOMDetector" */ = {
+		88CC4CBB1B9669A200910C78 /* Build configuration list for PBXNativeTarget "TBOOMDetector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88CC4C931B964A6D00910C78 /* Debug */,
-				88CC4C941B964A6D00910C78 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88CC4C951B964A6D00910C78 /* Build configuration list for PBXNativeTarget "TBOOMDetectorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88CC4C961B964A6D00910C78 /* Debug */,
-				88CC4C971B964A6D00910C78 /* Release */,
+				88CC4CBC1B9669A200910C78 /* Debug */,
+				88CC4CBD1B9669A200910C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 88CC4C671B964A6D00910C78 /* Project object */;
+	rootObject = 88CC4C9F1B9669A200910C78 /* Project object */;
 }
