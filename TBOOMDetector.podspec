@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TBOOMDetector"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "Detect Out Of Memory events in an iOS app"
 
   s.description  = <<-DESC
