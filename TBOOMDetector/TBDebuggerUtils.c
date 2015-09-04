@@ -31,6 +31,6 @@ bool isApplicationAttachedToDebugger() {
     return false;
   }
 #else
-  return NO;
+  return false;
 #endif
 }
