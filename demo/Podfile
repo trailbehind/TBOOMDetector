@@ -4,8 +4,3 @@ target 'demo' do
     pod 'Fabric'
     pod 'Crashlytics'
 end
-
-target 'demoTests' do
-
-end
-
