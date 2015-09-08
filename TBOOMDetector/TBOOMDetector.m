@@ -189,7 +189,7 @@ static NSString *OSVersionKey = @"OSVersion";
 
 
 #pragma mark - CrashlyticsDelegate
-- (void)crashlyticsDidDetectReportForLastExecution:(CLSReport *)report completionHandler:(void (^)(BOOL submit))completionHandler; {
+- (void)crashlyticsDidDetectReportForLastExecution:(CLSReport *)report completionHandler:(void (^)(BOOL submit))completionHandler {
   crashWasDetected = YES;
   completionHandler(YES);
 }
@@ -208,6 +208,31 @@ static NSString *OSVersionKey = @"OSVersion";
 
 - (void)handleTerminateNotification {
   [self logTerminationEvent:@"terminate"];
+}
+
+
+#pragma mark - class methods
++ (NSString*)stringFromTBTerminationType:(TBTerminationType)terminationType {
+  switch (terminationType) {
+    case TBTerminationTypeUnknown:
+      return @"TBTerminationTypeUnknown";
+    case TBTerminationTypeAppUpdate:
+      return @"TBTerminationTypeAppUpdate";
+    case TBTerminationTypeExit:
+      return @"TBTerminationTypeExit";
+    case TBTerminationTypeCrash:
+      return @"TBTerminationTypeCrash";
+    case TBTerminationTypeDebugger:
+      return @"TBTerminationTypeDebugger";
+    case TBTerminationTypeOSUpdate:
+      return @"TBTerminationTypeOSUpdate";
+    case TBTerminationTypeTerminate:
+      return @"TBTerminationTypeTerminate";
+    case TBTerminationTypeBackgroundOom:
+      return @"TBTerminationTypeBackgroundOom";
+    case TBTerminationTypeForegroundOom:
+      return @"TBTerminationTypeForegroundOom";
+  }
 }
 
 

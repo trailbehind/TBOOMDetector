@@ -31,4 +31,6 @@ typedef NS_ENUM(NSInteger, TBTerminationType) {
 - (void)logAbort;
 - (void)logExit;
 
++ (NSString*)stringFromTBTerminationType:(TBTerminationType)terminationType;
+
 @end
