@@ -11,6 +11,7 @@
 
 typedef NS_ENUM(NSInteger, TBTerminationType) {
   TBTerminationTypeUnknown = -1,
+  TBTerminationTypeAppLaunchAfterFirstInstall,
   TBTerminationTypeAppUpdate,
   TBTerminationTypeExit,
   TBTerminationTypeCrash,

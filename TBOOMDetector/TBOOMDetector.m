@@ -88,7 +88,9 @@ static NSString *OSVersionKey = @"OSVersion";
   }
   
   TBTerminationType terminationType = TBTerminationTypeUnknown;
-  if([self checkAppUpdated:launchState]) {
+  if([self checkAppLaunchAfterFirstInstall:launchState]) {
+    terminationType = TBTerminationTypeAppLaunchAfterFirstInstall;
+  } else if([self checkAppUpdated:launchState]) {
     terminationType = TBTerminationTypeAppUpdate;
   } else if([self checkAbortOrExit]) {
     terminationType = TBTerminationTypeExit;
@@ -120,6 +122,17 @@ static NSString *OSVersionKey = @"OSVersion";
 
   if (callback) {
     callback(terminationType);
+  }
+}
+
+
+- (BOOL)checkAppLaunchAfterFirstInstall:(NSDictionary*)launchState {
+  NSString *lastVersion = launchState[AppVersionKey];
+    
+  if(lastVersion == nil) {
+    return YES;
+  } else {
+    return NO;
   }
 }
 
@@ -216,6 +229,8 @@ static NSString *OSVersionKey = @"OSVersion";
   switch (terminationType) {
     case TBTerminationTypeUnknown:
       return @"TBTerminationTypeUnknown";
+    case TBTerminationTypeAppLaunchAfterFirstInstall:
+      return @"TBTerminationTypeAppLaunchAfterFirstInstall";
     case TBTerminationTypeAppUpdate:
       return @"TBTerminationTypeAppUpdate";
     case TBTerminationTypeExit:
