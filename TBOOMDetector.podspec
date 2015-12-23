@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TBOOMDetector"
-  s.version      = "0.3"
+  s.version      = "0.4"
   s.summary      = "Detect Out Of Memory events in an iOS app"
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/trailbehind/TBOOMDetector.git", :tag => "0.3" }
+  s.source       = { :git => "https://github.com/trailbehind/TBOOMDetector.git", :tag => "0.4" }
 
   s.source_files  = "TBOOMDetector/*.{h,m,c}"
   s.dependency 'Crashlytics', '~> 3'
