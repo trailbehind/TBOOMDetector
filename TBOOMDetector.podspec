@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/trailbehind/TBOOMDetector.git", :tag => "0.4" }
+  s.source       = { :git => "https://github.com/trailbehind/TBOOMDetector.git", :tag => "0.5" }
 
   s.source_files  = "TBOOMDetector/*.{h,m,c}"
   s.dependency 'Crashlytics', '~> 3'
