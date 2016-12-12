@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger, TBTerminationType) {
 @interface TBOOMDetector : NSObject
 
 @property (nonatomic, readonly) TBTerminationType lastTerminationType;
+@property (nonatomic, readonly) BOOL appWasBackgroundedOnExit;
 
 - (instancetype)initWithCrashlyticsApiKey:(NSString*)apiKey
                                 directory:(NSString*)directory

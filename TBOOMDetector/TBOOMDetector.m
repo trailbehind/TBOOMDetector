@@ -15,7 +15,6 @@
   NSString *backgroundStateFile;
   NSString *terminationEventFileContents;
   BOOL crashWasDetected;
-  BOOL appWasBackgroundedOnExit;
   NSString *stateDirectory;
 }
 
@@ -63,10 +62,10 @@ static NSString *OSVersionKey = @"OSVersion";
     }
     
     backgroundStateFile = [directory stringByAppendingString:@"OOMDetectorBackgroundState.bool"];
-    appWasBackgroundedOnExit = NO;
+    _appWasBackgroundedOnExit = NO;
     if([[NSFileManager defaultManager] fileExistsAtPath:backgroundStateFile]) {
       [[NSFileManager defaultManager] removeItemAtPath:backgroundStateFile error:nil];
-      appWasBackgroundedOnExit = YES;
+      _appWasBackgroundedOnExit = YES;
     }
     
     //Wait for crashlytics to run, so we know if there was a crash
@@ -103,7 +102,7 @@ static NSString *OSVersionKey = @"OSVersion";
   } else if ([terminationEventFileContents isEqualToString:@"debugger"]) {
     terminationType = TBTerminationTypeDebugger;
   } else {
-    if(appWasBackgroundedOnExit) {
+    if(_appWasBackgroundedOnExit) {
       NSLog(@"Detected Background OOM");
       terminationType = TBTerminationTypeBackgroundOom;
     } else {
