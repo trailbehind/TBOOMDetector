@@ -61,7 +61,7 @@ static NSString *OSVersionKey = @"OSVersion";
       [self logTerminationEvent:@"debugger"];
     }
     
-    backgroundStateFile = [directory stringByAppendingString:@"OOMDetectorBackgroundState.bool"];
+    backgroundStateFile = [directory stringByAppendingPathComponent:@"OOMDetectorBackgroundState.bool"];
     _appWasBackgroundedOnExit = NO;
     if([[NSFileManager defaultManager] fileExistsAtPath:backgroundStateFile]) {
       [[NSFileManager defaultManager] removeItemAtPath:backgroundStateFile error:nil];
