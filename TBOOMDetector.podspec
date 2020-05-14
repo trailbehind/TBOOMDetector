@@ -19,6 +19,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/trailbehind/TBOOMDetector.git", :tag => "0.6" }
 
   s.source_files  = "TBOOMDetector/*.{h,m,c}"
-  s.dependency 'Crashlytics', '~> 3'
 
 end
