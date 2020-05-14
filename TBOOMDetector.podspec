@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
 
   s.source_files  = "TBOOMDetector/*.{h,m,c}"
   s.dependency 'Crashlytics', '~> 3'
+  s.static_framework = true
 
 end
