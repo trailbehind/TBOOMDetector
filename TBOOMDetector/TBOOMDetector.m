@@ -10,7 +10,7 @@
 #import "TBDebuggerUtils.h"
 #import <UIKit/UIKit.h>
 
-@interface TBOOMDetector () <CrashlyticsDelegate> {
+@interface TBOOMDetector () {
   NSString *terminationEventFile;
   NSString *backgroundStateFile;
   NSString *terminationEventFileContents;
@@ -25,13 +25,12 @@
 static NSString *AppVersionKey = @"AppVersion";
 static NSString *OSVersionKey = @"OSVersion";
 
-- (instancetype)initWithCrashlyticsApiKey:(NSString*)apiKey
-                                directory:(NSString*)directory
-                                 callback:(void (^)(TBTerminationType terminationType))callback {
+- (instancetype)initWithDirectory:(NSString*)directory
+                       crashCheck:(BOOL (^)(void))crashCheck
+                         callback:(void (^)(TBTerminationType terminationType))callback {
   self = [super init];
   if(self) {
     stateDirectory = directory;
-    [Crashlytics startWithAPIKey:apiKey delegate:self];
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(handleBackgroundNotification)
@@ -68,8 +67,8 @@ static NSString *OSVersionKey = @"OSVersion";
       _appWasBackgroundedOnExit = YES;
     }
     
-    //Wait for crashlytics to run, so we know if there was a crash
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+      self->crashWasDetected = crashCheck();
       [self runChecks:callback];
     });
   }
@@ -197,13 +196,6 @@ static NSString *OSVersionKey = @"OSVersion";
           atomically:NO
             encoding:NSUTF8StringEncoding
                error:nil];
-}
-
-
-#pragma mark - CrashlyticsDelegate
-- (void)crashlyticsDidDetectReportForLastExecution:(CLSReport *)report completionHandler:(void (^)(BOOL submit))completionHandler {
-  crashWasDetected = YES;
-  completionHandler(YES);
 }
 
 

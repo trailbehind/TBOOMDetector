@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Crashlytics/Crashlytics.h>
 
 typedef NS_ENUM(NSInteger, TBTerminationType) {
   TBTerminationTypeUnknown = -1,
@@ -27,9 +26,9 @@ typedef NS_ENUM(NSInteger, TBTerminationType) {
 @property (nonatomic, readonly) TBTerminationType lastTerminationType;
 @property (nonatomic, readonly) BOOL appWasBackgroundedOnExit;
 
-- (instancetype)initWithCrashlyticsApiKey:(NSString*)apiKey
-                                directory:(NSString*)directory
-                                 callback:(void (^)(TBTerminationType terminationType))callback;
+- (instancetype)initWithDirectory:(NSString*)directory
+                       crashCheck:(BOOL (^)(void))crashCheck
+                         callback:(void (^)(TBTerminationType terminationType))callback;
 - (void)logAbort;
 - (void)logExit;
 

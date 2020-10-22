@@ -10,17 +10,20 @@
 #import "TBOOMDetector.h"
 
 @interface AppDelegate ()
-@property (nonatomic, retain) TBOOMDetector *oomDetector;
+@property (nonatomic, strong) TBOOMDetector *oomDetector;
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   NSArray *paths = NSSearchPathForDirectoriesInDomains (NSLibraryDirectory, NSUserDomainMask, YES);
-  self.oomDetector = [[TBOOMDetector alloc] initWithCrashlyticsApiKey:@""
-                                                            directory:paths[0]
+  self.oomDetector = [[TBOOMDetector alloc] initWithDirectory:paths[0]
+                                                   crashCheck:^BOOL{
+    // return [[Crashlytics crashlytics] didCrashDuringPreviousExecution];
+    return NO;
+  }
                                                              callback:^(TBTerminationType terminationType) {
-                                                               NSLog(@"Termination type %li", (long)terminationType);
+                                                               NSLog(@"Termination type %li - %@", (long)terminationType, [TBOOMDetector stringFromTBTerminationType:terminationType]);
                                                              }];
   return YES;
 }
