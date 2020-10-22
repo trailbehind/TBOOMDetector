@@ -27,3 +27,4 @@ DerivedData
 Podfile.lock
 Pods/*
 demo/pods/*
+TBOOMDetector.xcodeproj/project.xcworkspace

@@ -12,6 +12,6 @@
 /** Determine if debugger is attached to application
  @return true if debugger is attached
  */
-bool isApplicationAttachedToDebugger();
+bool isApplicationAttachedToDebugger(void);
 
 #endif
